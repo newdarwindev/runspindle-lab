@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "id": "20261115T082143Z",
+  "tier": "fixture",
+  "upstreamExecuted": false,
+  "labCommit": "509b4d5fb6f5d4a25b0ad2c3e01321d446bde2fd",
+  "sources": [
+    {
+      "path": "sources/runspindle",
+      "commit": "bfa71ae5b6bc7c9ba4f5c9c10d43c9b1f47ec963",
+      "url": "https://github.com/newdarwindev/runspindle.git"
+    },
+    {
+      "path": "sources/demo-suite",
+      "commit": "e5ec3baad8774836c40c3aea74b6b8be1f786541",
+      "url": "https://github.com/newdarwindev/runspindle-demo-suite.git"
+    }
+  ],
+  "environment": "cloud development container, not Strix or Mac CI",
+  "contractTests": {
+    "status": "passed",
+    "exitCode": 0,
+    "logSha256": "7f3b4e16d45d45d8549201539317d1e02b66d83b08c115a5ac33b61d4660a54d",
+    "testsRun": 65
+  },
+  "runs": [
+    {
+      "runId": "bakery-prep-5270fa7c1d3c",
+      "case": "bakery-prep",
+      "fault": "normal",
+      "parentCommit": "e5ec3baad8774836c40c3aea74b6b8be1f786541",
+      "childCommits": {
+        "apps/mock-counterorders": "24afd8dcf832e6a47a07bc02a33bfbe386908d42",
+        "apps/mock-mail": "9cfdbf49928d110164b9eed3ea6f9e63c67ee3a0",
+        "apps/mock-interview-room": "a196a9b3befc3959c55aeef8cf8b3340ca3d9cf2",
+        "apps/mock-code-workspace": "acf1fae4da475cfd9f72b97c1cef5b9c21dc9d0a",
+        "apps/mock-timesheet-portal": "3fcb3090244163f0fba034f0611fee7fc8d2dcf7",
+        "apps/mock-applicant-portal": "ca2298da6dfd291a8c27aedb94bcdd1a3530e606",
+        "apps/mock-issue-tracker": "1f8115073fb23129dc9b98d5638256762fa22553",
+        "apps/mock-vendor-portal": "7fc220b01646bca7f35b456e4cfd169efd604e03",
+        "apps/mock-coderpad": "f8246ff65b76e01bd5efad36a02efa599af31cae",
+        "apps/mock-excel": "b8cf810591ecf4a384b553cbf7c9d85800e79b48",
+        "apps/mock-marketplace": "ddd70d08310d9c0a68e78cc30a06058e75d54a40",
+        "apps/mock-bank": "99438709ee8a0eabe0f483233583be0eaebb391f",
+        "apps/mock-job-board": "fbb28295697589d5171f4a8153058c8fa067bf7b",
+        "apps/mock-supplier-portal": "1e6fec8c28a5deb713ed8d422e1e853f03106207",
+        "workflows/subcontractor-invoices": "f69e16b24ec149cf26c92fdaf0dd067e54614e56",
+        "workflows/bakery-prep": "ee6c85d557fe644105a0b993db648e3efa49d98d",
+        "workflows/bookkeeper-deposit": "da584ad25eadf6277b06dc5cfd241d8514ab1e2f",
+        "workflows/vintage-returns": "1c6776b5c4cf847005af3acf3062834480409492",
+        "workflows/consultancy-contract": "ee1715533a9da6df800331f52679398d47e6f2ce",
+        "workflows/staffing-billing": "8cd66188c5cb6be5ad7cf6c958fa52c05beacbea",
+        "workflows/produce-packing": "f51d8a8e3afcb71dd92238bc6be11ab7cba40ff6"
+      },
+      "executionMode": "fixture",
+      "upstreamExecuted": false,
+      "outcome": "verified",
+      "metrics": {
+        "verifiedCompletions": 1,
+        "elapsedSeconds": 4.648761987686157,
+        "attemptElapsedSeconds": 4.6487627029418945,
+        "operatorMinutes": null,
+        "scriptedOperatorMinutes": 0.002912196549999999,
+        "scriptedOperatorActions": 2,
+        "operatorTimingNote": "Human operator time unmeasured. Scripted fixture operator duration sums browser clicks through response parsing, including failed attempts, across recorded attempts; excludes human decisions and is not staff-time savings."
+      },
+      "checks": {
+        "expected_result": true,
+        "actual_workbook_row": true,
+        "actual_table_cells": true,
+        "actual_table_totals": true,
+        "unrelated_table_rows_preserved": true,
+        "unrelated_preserved": true,
+        "single_case_row": true,
+        "saved_revision_matches": true,
+        "historical_notes_preserved": true,
+        "pack_size_total": true,
+        "owner_choice_applied": true,
+        "independent_browser_readback": true,
+        "checkpoint_source_readback": true,
+        "exact_artifact_delivery": true
+      },
+      "limitations": [
+        "Fixture only; upstream Runspindle does not execute.",
+        "Comparative staff-time savings untested."
+      ],
+      "exitCode": 0,
+      "media": [
+        {
+          "path": "bakery-prep-5270fa7c1d3c/2131ac0eaf699e7f58b03566f4dea9e8.webm",
+          "sha256": "28228e341e980a3bebb90a74d83ce7925d530bd77c394952429a494a1e762328",
+          "bytes": 42380
+        },
+        {
+          "path": "bakery-prep-5270fa7c1d3c/e845be0e2a9ac572d7361000c4494942.webm",
+          "sha256": "2a1d50886b6bb3e521f65b966e6e7a6b95cba4e310af6ebc02b4bd0fd9173902",
+          "bytes": 104799
+        },
+        {
+          "path": "bakery-prep-5270fa7c1d3c/abcb0a318b5710f31352fd7ae0f3f40e.webm",
+          "sha256": "91f91b5e2e94ce3e8c80043a4f48332188efce0f92edcc3ebdf9dda9c8de14fe",
+          "bytes": 108511
+        },
+        {
+          "path": "bakery-prep-5270fa7c1d3c/independent-observer.png",
+          "sha256": "f7fa452f5129dc7c15336002c1890bd03031d8080c9e9b190fbc84773ce58867",
+          "bytes": 80636
+        },
+        {
+          "path": "bakery-prep-5270fa7c1d3c/result.png",
+          "sha256": "234ed9f1411508c74757a5c3a3782d078554c823bb054c053079a4a29a845885",
+          "bytes": 56859
+        }
+      ]
+    },
+    {
+      "runId": "bookkeeper-deposit-4e3c1ecb4b51",
+      "case": "bookkeeper-deposit",
+      "fault": "expired",
+      "parentCommit": "e5ec3baad8774836c40c3aea74b6b8be1f786541",
+      "childCommits": {
+        "apps/mock-counterorders": "24afd8dcf832e6a47a07bc02a33bfbe386908d42",
+        "apps/mock-mail": "9cfdbf49928d110164b9eed3ea6f9e63c67ee3a0",
+        "apps/mock-interview-room": "a196a9b3befc3959c55aeef8cf8b3340ca3d9cf2",
+        "apps/mock-code-workspace": "acf1fae4da475cfd9f72b97c1cef5b9c21dc9d0a",
+        "apps/mock-timesheet-portal": "3fcb3090244163f0fba034f0611fee7fc8d2dcf7",
+        "apps/mock-applicant-portal": "ca2298da6dfd291a8c27aedb94bcdd1a3530e606",
+        "apps/mock-issue-tracker": "1f8115073fb23129dc9b98d5638256762fa22553",
+        "apps/mock-vendor-portal": "7fc220b01646bca7f35b456e4cfd169efd604e03",
+        "apps/mock-coderpad": "f8246ff65b76e01bd5efad36a02efa599af31cae",
+        "apps/mock-excel": "b8cf810591ecf4a384b553cbf7c9d85800e79b48",
+        "apps/mock-marketplace": "ddd70d08310d9c0a68e78cc30a06058e75d54a40",
+        "apps/mock-bank": "99438709ee8a0eabe0f483233583be0eaebb391f",
+        "apps/mock-job-board": "fbb28295697589d5171f4a8153058c8fa067bf7b",
+        "apps/mock-supplier-portal": "1e6fec8c28a5deb713ed8d422e1e853f03106207",
+        "workflows/subcontractor-invoices": "f69e16b24ec149cf26c92fdaf0dd067e54614e56",
+        "workflows/bakery-prep": "ee6c85d557fe644105a0b993db648e3efa49d98d",
+        "workflows/bookkeeper-deposit": "da584ad25eadf6277b06dc5cfd241d8514ab1e2f",
+        "workflows/vintage-returns": "1c6776b5c4cf847005af3acf3062834480409492",
+        "workflows/consultancy-contract": "ee1715533a9da6df800331f52679398d47e6f2ce",
+        "workflows/staffing-billing": "8cd66188c5cb6be5ad7cf6c958fa52c05beacbea",
+        "workflows/produce-packing": "f51d8a8e3afcb71dd92238bc6be11ab7cba40ff6"
+      },
+      "executionMode": "fixture",
+      "upstreamExecuted": false,
+      "outcome": "verified",
+      "metrics": {
+        "verifiedCompletions": 1,
+        "elapsedSeconds": 4.173361778259277,
+        "attemptElapsedSeconds": 4.173363208770752,
+        "operatorMinutes": null,
+        "scriptedOperatorMinutes": 0.005993832900000001,
+        "scriptedOperatorActions": 3,
+        "operatorTimingNote": "Human operator time unmeasured. Scripted fixture operator duration sums browser clicks through response parsing, including failed attempts, across recorded attempts; excludes human decisions and is not staff-time savings."
+      },
+      "checks": {
+        "expected_result": true,
+        "actual_workbook_row": true,
+        "actual_table_cells": true,
+        "actual_table_totals": true,
+        "unrelated_table_rows_preserved": true,
+        "unrelated_preserved": true,
+        "single_case_row": true,
+        "saved_revision_matches": true,
+        "historical_notes_preserved": true,
+        "invoice_reference_match": true,
+        "independent_browser_readback": true,
+        "checkpoint_source_readback": true
+      },
+      "limitations": [
+        "Fixture only; upstream Runspindle does not execute.",
+        "Comparative staff-time savings untested."
+      ],
+      "exitCode": 0,
+      "media": [
+        {
+          "path": "bookkeeper-deposit-4e3c1ecb4b51/f7cf10cac33efca2545d64084f010ad0.webm",
+          "sha256": "54bea4cc87c2524ee9a42d4fd4c28cbeed880fdbed8b350424b7258b7bddfa63",
+          "bytes": 121779
+        },
+        {
+          "path": "bookkeeper-deposit-4e3c1ecb4b51/321571ee8f6a91393f185e94e5496d2a.webm",
+          "sha256": "de8bead5be451e0498eeca6acc09f461780ec8d37a406fd51ca463033d172514",
+          "bytes": 79435
+        },
+        {
+          "path": "bookkeeper-deposit-4e3c1ecb4b51/d1844aa2ed8aefc149083245fa82ffca.webm",
+          "sha256": "66fa88b2b445ec2ec8c76944120f3d2dc9c5a1f9021dd8d9b945fca73084fab6",
+          "bytes": 42378
+        },
+        {
+          "path": "bookkeeper-deposit-4e3c1ecb4b51/independent-observer.png",
+          "sha256": "2d86f8c8cefa74dfda9d78afdb3c910b6b095396b1d3369ba986ca3559451663",
+          "bytes": 76465
+        },
+        {
+          "path": "bookkeeper-deposit-4e3c1ecb4b51/handoff-mock-bank.png",
+          "sha256": "61ad3ea4f3b6b2563f3b18f16e2a8552385c5e80f1d3d309b56f5fafdcc2c61d",
+          "bytes": 82427
+        },
+        {
+          "path": "bookkeeper-deposit-4e3c1ecb4b51/result.png",
+          "sha256": "9e026a1a16a52f5337de64cec89f2a793c0cf2f0220f164e6fc4d00dba0b42a5",
+          "bytes": 56009
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Synthetic scripted browser fixture, not product integration.",
+    "Human operator time and savings are unmeasured.",
+    "This run does not qualify either local CI host."
+  ],
+  "labDirty": true,
+  "referenceHarnessSha256": "9557885d96991ed0a42765f39f28b3ef1388d92183d6099f864037e1b6f80d0c",
+  "provenanceNote": "Executed from the recorded Lab base commit with the new reference harness uncommitted; its exact SHA-256 is retained. Source submodule pins were clean and exact."
+}

@@ -11,3 +11,7 @@ Next gates, in order:
 6. Establish stable measurements before baseline guidance or optimization claims. Record failed and blocked runs, quality, operator interventions, runtime, model/tool usage when genuinely measured, and environment identities. No invented savings.
 
 The product and component adapters intentionally return blocked today. Fixture contract tests are a separate command and can never satisfy product acceptance.
+
+## Fixture reference delivered
+
+The bounded reference harness and static dashboard now execute bakery then bookkeeper expired-sign-in recovery against the independent pinned demo suite. Actual recordings, persisted-state assertions, media hashes and browser dashboard QA are retained in `evidence/20261115T082143Z/`. This advances fixture evidence only; the actual component/product adapters and dual-host CI gates above remain open.

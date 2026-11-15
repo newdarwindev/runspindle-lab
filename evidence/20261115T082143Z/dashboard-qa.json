@@ -1,0 +1,33 @@
+{
+  "status": "verified",
+  "sandbox": true,
+  "cards": 2,
+  "playedClips": 6,
+  "clips": [
+    {
+      "duration": 0.32,
+      "played": true
+    },
+    {
+      "duration": 1.08,
+      "played": true
+    },
+    {
+      "duration": 0.84,
+      "played": true
+    },
+    {
+      "duration": 1.2,
+      "played": true
+    },
+    {
+      "duration": 0.64,
+      "played": true
+    },
+    {
+      "duration": 0.28,
+      "played": true
+    }
+  ],
+  "mobileOverflow": false
+}
