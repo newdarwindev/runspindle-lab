@@ -1,0 +1,49 @@
+name: Strix scaffold checks (Mac lane unavailable)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: runspindle-lab-local
+  cancel-in-progress: false
+jobs:
+  verify:
+    if: github.ref == 'refs/heads/main'
+    # MacBook Pro lane is unavailable; no invented labels or fallback.
+    runs-on: [self-hosted, linux, x64, runspindle-isolated, strix]
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          submodules: recursive
+          persist-credentials: false
+      - name: Verify assigned lane and prerequisites
+        env:
+          EXPECTED_OS: Linux
+          EXPECTED_ARCH: X64
+          ACTUAL_OS: ${{ runner.os }}
+          ACTUAL_ARCH: ${{ runner.arch }}
+        run: |
+          test "$ACTUAL_OS" = "$EXPECTED_OS"
+          test "$ACTUAL_ARCH" = "$EXPECTED_ARCH"
+          command -v python3
+          command -v git
+          python3 --version
+          git --version
+      - name: Verify pins and scaffold contracts
+        run: |
+          python3 tools/lab.py check
+          python3 -m unittest discover -s tests -v
+      - name: Independent demo fixture contracts (not product acceptance)
+        run: python3 tools/lab.py fixture-contracts
+      - name: Generate truthful blocked-lane status
+        if: always()
+        run: python3 tools/lab.py report
+      - name: Retain synthetic report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: lab-scaffold-strix-${{ github.sha }}
+          path: artifacts/site/
+          if-no-files-found: error
+          retention-days: 30

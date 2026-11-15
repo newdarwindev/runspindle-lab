@@ -1,0 +1,6 @@
+[submodule "sources/runspindle"]
+	path = sources/runspindle
+	url = https://github.com/newdarwindev/runspindle.git
+[submodule "sources/demo-suite"]
+	path = sources/demo-suite
+	url = https://github.com/newdarwindev/runspindle-demo-suite.git

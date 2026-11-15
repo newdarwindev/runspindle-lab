@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "path": "sources/runspindle",
+      "commit": "bfa71ae5b6bc7c9ba4f5c9c10d43c9b1f47ec963",
+      "url": "https://github.com/newdarwindev/runspindle.git"
+    },
+    {
+      "path": "sources/demo-suite",
+      "commit": "e5ec3baad8774836c40c3aea74b6b8be1f786541",
+      "url": "https://github.com/newdarwindev/runspindle-demo-suite.git"
+    }
+  ]
+}
