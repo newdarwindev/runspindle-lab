@@ -1,6 +1,7 @@
 name: Strix scaffold checks (Mac lane unavailable)
 on:
-  workflow_dispatch:
+  push:
+    branches: [main, 'ci/*']
 permissions:
   contents: read
 concurrency:
@@ -8,9 +9,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   verify:
-    if: github.ref == 'refs/heads/main'
-    # MacBook Pro lane is unavailable; no invented labels or fallback.
-    runs-on: [self-hosted, linux, x64, runspindle-isolated, strix]
+    runs-on: ${{ format('runspindle-strix-direct-{0}-{1}-verify', github.run_id, github.run_attempt) }}
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
